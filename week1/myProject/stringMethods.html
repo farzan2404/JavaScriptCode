@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets start coding </title>
+</head>
+<body>
+    <h1> Hello World </h1>
+    <script>
+        var string = "Module Introduction Working with the Code Editor Operators, Booleans, JavaScript Loops in JavaScript Sequence";
+        var text = string.toUpperCase();
+        console.log(text);
+        var search = text.search('WITH');
+
+        var subString = string.substr(search,7);   // This works amazing (provides the substring which we already searched from the string).
+        subString = subString.toUpperCase();
+        var newString = string.replace('with',subString);
+
+        console.log(subString);
+        console.log(search);
+        console.log(newString);
+    </script>
+</body>
+</html>

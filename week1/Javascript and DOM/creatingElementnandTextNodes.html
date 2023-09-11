@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+</head>
+
+<body>
+
+    <div>
+        <p> Here is my 1st paragraph</p>
+    </div>
+    <script>
+        var myTag = document.createElement('p');
+        var myPara = document.createTextNode('Here is my 2nd paragraph');
+        myTag.appendChild(myPara);
+        var myDiv = document.querySelector('div');
+        myDiv.appendChild(myTag);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+</head>
+<body>
+
+    <style>
+        .red { color: red;}
+    </style>
+    <div>
+        <h1>Article </h1>
+        <p>This is my article</p>
+        <h3>Habibi come to Dubai</h3>
+    </div>
+    <div>
+        <h1>Article 2</h1>
+        <p id="myPara">Today's Date</p>
+        <h3>Halloween</h3>
+    </div>
+
+    <script>
+        var myArticle = document.querySelector('h1');
+        myArticle.className = "red";
+
+        var myArticle2 = document.getElementById('myPara');  
+        myArticle2.className = "red";
+        </script>
+</body>
+</html>

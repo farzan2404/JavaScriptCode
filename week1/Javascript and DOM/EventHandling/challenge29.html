@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+    <style>
+        
+        body { height: 3000px;}
+        .one { background-color: red; transition: all 3s;}
+        .two { background-color: green; transition: all 3s;}
+        .three { background-color: orange; transition: all 3s;}
+        .four { background-color: pink; transition: all 3s;}
+    </style>
+
+</head>
+<body class="one">
+  
+    <h1> This is challenge number: 29</h1>
+    <p> Scroll down!</p>
+    <script>
+
+     var pageTop;
+     var mybody = document.querySelector('body');
+
+     window.addEventListener('scroll', function(){
+     pageTop = window.pageYOffset;
+
+     switch(true)
+     {
+        case pageTop < 500: mybody.className = "one";
+        break;
+        case pageTop < 1000: mybody.className = "two";
+        break;
+        case pageTop < 1500: mybody.className = "three";
+        break; 
+        case pageTop < 2000: mybody.className = "four";
+        break;
+        default: console.log('No color change');
+     }
+    })
+
+    
+    </script>
+</body>
+</html>

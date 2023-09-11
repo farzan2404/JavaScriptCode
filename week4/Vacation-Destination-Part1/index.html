@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destinations WishList</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+	<!-- Our CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Vacation Destination Wishlist</h1>
+        <p> Found the exiting places to visit on vacations? Use the form below to add them in the Wishlist.</p>
+    </header>
+    <main>
+        <form id="destination_details">
+
+            <label for="name"> Destination Name </label>
+            <input type="text" id="name" placeholder="Name of the destination?" required>
+
+            <label for="location"> Destination Location</label>
+            <input type="text" id="location" placeholder="Location of the destination?" required>
+
+            <label for="photo"> Photo</label>
+            <input type="url" id="photo" placeholder="Photo of the destination?">
+
+            <label for="description"> Destination Description</label>
+            <textarea id="description" cols="30" rows="10" placeholder="description?"></textarea>
+
+            <button type="submit"> Add to Wishlist</button>    
+
+        </form>
+        <article>
+            <h2 id="title"> Enter Destination Details:</h2>
+            <div id="destination_container">
+                <!-- Use card attribute -->
+                
+            </div>
+        </article>
+    </main>
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>   
+</body>
+
+</html>

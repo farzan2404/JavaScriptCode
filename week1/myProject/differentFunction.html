@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Solve It </title>
+</head>
+<body>
+    <h1>Hey!</h1> 
+    <script>
+        var greeting = " Hello World! ";
+        function func1(myString)
+        {
+            myString = myString.toUpperCase();
+            return myString;
+        }
+
+        var func2 = function(myString)
+        {
+            myString = myString.toUpperCase();
+            return myString;
+        }
+
+        var func3 = myString => myString.toUpperCase();  // Arrow function . Special function
+
+        console.log(func1(greeting));
+        console.log(func2(greeting));
+        console.log(func3(greeting));
+    </script>
+</body>
+</html>

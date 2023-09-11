@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+</head>
+
+<body>
+
+    <div>
+        <p>For each of these challenges, use the start file
+            and add tags at the bottom of the
+            page, just before the closing tag, and
+            put your JavaScript between those tags.
+        </p>
+        <p> For this challenge, get all the paragraphs on
+            the page, assign them to a variable, then use
+            that variable in a loop to set the style.color
+            property to green.
+        </p>
+        <p>
+            For this challenge, get all the paragraphs on
+            the page, assign them to a variable, then use
+            that variable in a loop to set the style.color
+            property to green.
+        </p>
+    </div>
+
+    <script>
+        var myCode = document.getElementsByTagName('p');
+        console.log(myCode);
+        for (var i = 0; i < myCode.length; i++) {
+            myCode[i].style.color = "green";
+            console.log("This is operation number: " + i)
+        }
+    </script>
+</body>
+
+</html>

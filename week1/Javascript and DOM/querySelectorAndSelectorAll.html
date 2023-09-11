@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+</head>
+
+<body>
+    <div id="special">
+        <h1> Hello </h1>
+        <p>This is my arena</p>
+        <p>This is my arena</p>
+        <p>This is my arena</p>
+    </div>
+    <script>
+        // var collect = document.querySelector(".special");
+        // collect.style.color = "red";
+
+        var ht = document.querySelectorAll('#special p');
+        for (var i = 0; i < ht.length; i++) {
+            ht[i].style.color = "red";
+        }
+    </script>
+</body>
+
+</html>

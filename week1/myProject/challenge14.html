@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Solve It </title>
+</head>
+
+<body>
+    <h1>Hey!</h1>
+    <script>
+        var enterName = prompt("Enter your name:")
+        function greet(myName) {
+            var greeting;
+            if (myName) {
+                greeting = "Hello " + myName + " how are you?";
+            }
+            else {
+                greeting = " You didn't enter your name!!";
+            }
+            return greeting;
+        }
+        console.log(greet(enterName));
+    </script>
+</body>
+<!-- Here we are returning the greeting variable in the console, which is applied in the function -->
+
+</html>

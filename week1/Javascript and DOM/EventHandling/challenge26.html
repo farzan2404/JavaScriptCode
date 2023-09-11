@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+
+</head>
+<body>
+
+    <h1>New challenge</h1>
+    <div>
+        <p> This is my paragraph number 1</p>
+    </div>
+    <button> Add new Paragraph </button><br>
+    <button id="btn"> Remove last Paragraph</button>
+
+    <script>
+        var noOfPara=1;
+        var mydiv = document.querySelector('div');
+        var mybtn = document.querySelector('button');
+        var mybtn2 = document.querySelector('#btn');
+
+        mybtn.addEventListener('click', function(){
+
+            noOfPara++;
+            var myEle = document.createElement('p')
+            var myPara = document.createTextNode(`This is my Paragraph number ${noOfPara}`);
+            myEle.appendChild(myPara)
+            mydiv.appendChild(myEle)  
+    })
+
+        mybtn2.addEventListener('click', function(){
+
+            if(noOfPara>1){
+            var myPara = document.querySelectorAll('p');
+            mydiv.removeChild(mydiv.children[myPara.length-1]);
+            noOfPara--;
+            console.log(noOfPara);
+            }
+            else 
+            {
+                alert(" Do not delete it Man!");
+            }
+            })
+
+    </script>
+</body>
+</html>

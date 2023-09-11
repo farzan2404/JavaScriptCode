@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+    <style>
+        
+        .one { background-color: red; transition: all 2s;}
+        .two { background-color: green; transition: all 2s;}
+        .three { background-color: orange; transition: all 2s;}
+        .four { background-color: pink; transition: all 2s;}
+        .five { background-color: brown; transition: all 2s;}
+    </style>
+
+</head>
+<body class="one">
+  
+    <h1> This is challenge number: 30</h1>
+    <p></p>
+    <script>
+
+        var mybody = document.querySelector('body');
+        document.addEventListener('keydown', function(){
+
+            mystroke = event.key;
+
+            switch(mystroke)
+            {
+                case 'a': mybody.className = "two";
+                break;
+                case 'b': mybody.className = "three";
+                break;
+                case 'c': mybody.className = "four";
+                break;
+                case 'd': mybody.className = "five"; 
+                break;
+                default: alert(' Wrong key Pressed');
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Solve It </title>
+</head>
+
+<body>
+    <h1>Hey!</h1>
+    <script>
+        var enterName = prompt("Enter your name:")
+        function greet(myName) {
+            if (myName)  // meaning is, if myName have some value, then it's true else false.
+            {
+                console.log("Hello " + enterName + ", how are you?");
+            }
+            else {
+                console.log(" You didn't enter you name :")
+            }
+        }
+        greet(enterName);
+    </script>
+</body>
+
+</html>

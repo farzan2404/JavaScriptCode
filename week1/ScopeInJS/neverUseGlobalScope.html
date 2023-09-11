@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+
+</head>
+
+<body>
+
+    <p> This is my Paragraph</p>
+    <p> This is my 2nd Paragraph</p>
+    <p> This is my 3rd Paragraph</p>
+
+    <!-- Namespaces: are used to organize code into logical groups and to prevent name collisions -->
+    <!-- Closure: When you use closures for data privacy, the enclosed variables are only in scope within the containing (outer) function. -->
+    <script>
+        (function () {
+
+            myPara = document.querySelectorAll('p');
+            for (var i = 0; i < myPara.length; i++) {
+                myPara[i].style.color = "red";
+            }
+        }());
+        // console.log(myPara);
+
+        // This type of function is been invoked immediately, not like other functions.
+
+    </script>
+</body>
+
+</html>

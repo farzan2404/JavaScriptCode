@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+</head>
+<body>
+
+    <style>
+        .blue { color: blue;}
+    </style>
+    <div>
+        <h1> Article 1</h1>
+        <img src="" alt="dogo">
+        <p> Dinosaurs are a diverse group of reptiles[note 1] of the clade Dinosauria. 
+            They first appeared during the Triassic period, between 243 and 233.23 million years ago (mya), 
+            although the exact origin and timing of the evolution of dinosaurs is the subject of active research. 
+        </p>
+        <h3> Although it is true </h3>
+    </div>
+    <div>
+        <h1> Article 2</h1>
+        <p id="myPara"> They became the dominant terrestrial vertebrates after the Triassic–Jurassic extinction event 201.3 mya; 
+            their dominance continued throughout the Jurassic and Cretaceous periods. 
+            The fossil record shows that birds are feathered dinosaurs, 
+            having evolved from earlier theropods during the Late Jurassic epoch,
+            and are the only dinosaur lineage known to have survived the Cretaceous–Paleogene 
+            extinction event approximately 66 mya.</p>
+    </div>
+    <script>
+        var myImage = document.querySelector('img');
+        myImage.setAttribute('src',"http://meadpoint.net/images/xmasajax.jpg");
+
+        var myPara = document.getElementById("myPara");
+        myPara.className = "blue";
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Solve It </title>
+</head>
+
+<body>
+    <h1>Hey!</h1>
+    <script>
+        var foodsArray = ["Cake", "Burger", "Pizza", "Coke", "Chicken"];
+        var enterName = prompt("Enter your name please!");
+
+        function hello(myName) {
+            if (myName) {
+                console.log("Hey! " + myName + " how are you?");
+            }
+            else {
+                console.log(" You didn't enter your details...");
+            }
+        }
+
+        function hospitality(myName, myGift) {
+            var randomNumber = getRandomNumber(0, foodsArray.length - 1);
+
+            console.log(myName + " what would you like to have? " + myGift[randomNumber] + " ?\n");
+        }
+
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        hello(enterName);
+        hospitality(enterName, foodsArray);
+    </script>
+
+</body>
+
+</html>

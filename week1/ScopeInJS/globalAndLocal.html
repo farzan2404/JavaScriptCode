@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+
+</head>
+
+<body>
+
+    <script>
+
+        // var aVariable = " This is global variable";
+
+        function func() {
+            oops = " This is an accidental global varaible";  // If we forgot to use var keyword then it will be treated as global variable.
+            var aVariable = " This is a local variable";
+            console.log(aVariable);
+        }
+
+        func();
+        console.log(oops);
+    </script>
+</body>
+
+</html>

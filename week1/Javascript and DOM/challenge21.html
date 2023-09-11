@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript </title>
+</head>
+<body>
+
+    <h1> Llamas </h1>
+    <p> The llama (/ˈlɑːmə/; Spanish pronunciation: [ˈʎama]) (Lama glama) is a domesticated South American camelid, 
+        widely used as a meat and pack animal by Andean cultures since the Pre-Columbian era.
+        Llamas are social animals and live with others as a herd. Their wool is soft and contains only a small amount of lanolin.
+        [2] Llamas can learn simple tasks after a few repetitions.
+        When using a pack, they can carry about 25 to 30% of their body weight for 8 to 13 km (5–8 miles).
+        [3] The name llama (in the past also spelled "lama" or "glama") was adopted by European settlers from native Peruvians.</p>
+        <a href="https://www.britannica.com/animal/llama"> Link one</a><br>
+        <a href="https://www.nationalgeographic.com/animals/mammals/facts/llama-1"> Link two</a><br>
+        <a href="https://a-z-animals.com/animals/llama/"> Link three</a><br>
+        <a id="anchor" href="https://en.wikipedia.org/wiki/Llama"> Llamas</a><br>
+    <script>
+        var myLink = document.getElementsByTagName('a');
+        for(var i=0; i<myLink.length; i++)
+        {
+            var myAnchor = myLink[i].getAttribute('href');
+            if(myAnchor === "https://en.wikipedia.org/wiki/Llama")
+            {
+                myLink[i].innerHTML = "Llamas are cool!";
+            }
+        }
+
+    </script>
+</body>
+</html>
