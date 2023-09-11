@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li><a href="#">link one</a></li>
+        <li><a href="#">link two</a></li>
+        <li><a href="#">link three</a></li>
+        <li><a href="#">link four</a></li>
+        <li><a href="#">link five</a></li>
+        </ul>
+       </nav>
+       <p id="paragraph">Click a link to change this
+       paragraph</p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>	
+    <script>
+        var mylink = document.querySelectorAll('nav ul li a');
+        for(var i=0; i<mylink.length; i++)
+        {
+            mylink[i].addEventListener("click", function(){
+                const mychange = this.innerHTML;
+                document.getElementById('paragraph').innerHTML = `you clicked ${mychange}`;
+            });
+        }
+    </script>
+</body>
+</html>
